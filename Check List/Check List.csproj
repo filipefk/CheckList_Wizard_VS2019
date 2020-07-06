@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C9DA3B7-0D70-48F9-825C-5E4EC5816582}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Check_List</RootNamespace>
+    <AssemblyName>Check List</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Teclogica\FontesC#\CheckListWizard\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>2.0.0.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Checked files.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B6791AF9C33573F4042935F192B5528FD0EA8748</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Check List_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes auxiliares\csDadosComentario.cs" />
+    <Compile Include="Classes auxiliares\csFiltroArquivo.cs" />
+    <Compile Include="Classes auxiliares\csFiltrosArquivos.cs" />
+    <Compile Include="Classes auxiliares\csUtil.cs" />
+    <Compile Include="Classes auxiliares\csDadosLog.cs" />
+    <Compile Include="Classes auxiliares\csRelatorio.cs" />
+    <Compile Include="Classes auxiliares\csArquivoAberto.cs" />
+    <Compile Include="Forms auxiliares\frmListaComentarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms auxiliares\frmListaComentarios.Designer.cs">
+      <DependentUpon>frmListaComentarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms auxiliares\frmAbrindo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms auxiliares\frmAbrindo.Designer.cs">
+      <DependentUpon>frmAbrindo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Editores\frmEditaModeloCheckList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Editores\frmEditaModeloCheckList.Designer.cs">
+      <DependentUpon>frmEditaModeloCheckList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Editores\frmEditaItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Editores\frmEditaItem.Designer.cs">
+      <DependentUpon>frmEditaItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Editores\frmPreencheChekList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Editores\frmPreencheChekList.Designer.cs">
+      <DependentUpon>frmPreencheChekList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms auxiliares\frmListaLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms auxiliares\frmListaLog.Designer.cs">
+      <DependentUpon>frmListaLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms auxiliares\frmSelecionarModulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms auxiliares\frmSelecionarModulo.Designer.cs">
+      <DependentUpon>frmSelecionarModulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms auxiliares\frmTextoGrande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms auxiliares\frmTextoGrande.Designer.cs">
+      <DependentUpon>frmTextoGrande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms Editores\frmEditorRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms Editores\frmEditorRelatorio.Designer.cs">
+      <DependentUpon>frmEditorRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Itens de Check List\csItemData.cs" />
+    <Compile Include="Itens de Check List\csItem.cs" />
+    <Compile Include="Itens de Check List\csItemArquivo.cs" />
+    <Compile Include="Itens de Check List\csItemListaArquivos.cs" />
+    <Compile Include="Itens de Check List\csItemListaOpcoes.cs" />
+    <Compile Include="Itens de Check List\csItemTexto.cs" />
+    <Compile Include="Lista de Check Itens\csListaItens.cs" />
+    <Compile Include="Classes auxiliares\csOpcao.cs" />
+    <Compile Include="Program\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User Controls\ucPanItemData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucPanItemData.Designer.cs">
+      <DependentUpon>ucPanItemData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucPanListaItens.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucPanListaItens.Designer.cs">
+      <DependentUpon>ucPanListaItens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucPanItemTexto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucPanItemTexto.Designer.cs">
+      <DependentUpon>ucPanItemTexto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucPanItemListaOpcoes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucPanItemListaOpcoes.Designer.cs">
+      <DependentUpon>ucPanItemListaOpcoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucPanItemListaArquivos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucPanItemListaArquivos.Designer.cs">
+      <DependentUpon>ucPanItemListaArquivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucPanItemArquivo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucPanItemArquivo.Designer.cs">
+      <DependentUpon>ucPanItemArquivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucPanItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucPanItem.Designer.cs">
+      <DependentUpon>ucPanItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucLvwCheckItens.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucLvwCheckItens.Designer.cs">
+      <DependentUpon>ucLvwCheckItens.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms auxiliares\frmListaComentarios.resx">
+      <DependentUpon>frmListaComentarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms auxiliares\frmAbrindo.resx">
+      <DependentUpon>frmAbrindo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Editores\frmEditaModeloCheckList.resx">
+      <DependentUpon>frmEditaModeloCheckList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Editores\frmEditaItem.resx">
+      <DependentUpon>frmEditaItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Editores\frmPreencheChekList.resx">
+      <DependentUpon>frmPreencheChekList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms auxiliares\frmListaLog.resx">
+      <DependentUpon>frmListaLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms auxiliares\frmSelecionarModulo.resx">
+      <DependentUpon>frmSelecionarModulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms auxiliares\frmTextoGrande.resx">
+      <DependentUpon>frmTextoGrande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms Editores\frmEditorRelatorio.resx">
+      <DependentUpon>frmEditorRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="User Controls\ucPanItemData.resx">
+      <DependentUpon>ucPanItemData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucPanListaItens.resx">
+      <DependentUpon>ucPanListaItens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucPanItemTexto.resx">
+      <DependentUpon>ucPanItemTexto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucPanItemListaOpcoes.resx">
+      <DependentUpon>ucPanItemListaOpcoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucPanItemListaArquivos.resx">
+      <DependentUpon>ucPanItemListaArquivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucPanItem.resx">
+      <DependentUpon>ucPanItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucPanItemArquivo.resx">
+      <DependentUpon>ucPanItemArquivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Program\app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Diagramas\Diagrama de classes.cd" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Checked files.ico" />
+    <None Include="Resources\loading130x98.gif" />
+    <None Include="Resources\undo1.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\view_fullscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

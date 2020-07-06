@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Check_List.csFiltroArquivo">
+    <Position X="11.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAABAAAEAAAAAAAAEACAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes auxiliares\csFiltroArquivo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Check_List.csFiltrosArquivos">
+    <Position X="11.75" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAEAAAAAAAAAAAAAABAQEAAAEAAAAAAAQAABAAAA=</HashCode>
+      <FileName>Classes auxiliares\csFiltrosArquivos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Check_List.csOpcao">
+    <Position X="9.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAgAAAAAAAAEBBAAAAEAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes auxiliares\csOpcao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Check_List.csItem">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAYBAAAAAAAAIAAAEIAAACIEACAgAAEQAgA=</HashCode>
+      <FileName>Itens de Check List\csItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Check_List.csItemArquivo">
+    <Position X="7" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAEQAAAAEYAAAgAAAACEAFAgAAAIAAAACEgABAQCAA=</HashCode>
+      <FileName>Itens de Check List\csItemArquivo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Check_List.csItemListaArquivos">
+    <Position X="5" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAAAAcAAAAAAAAAFAVEAAAAAAAAAGIgAABQAAA=</HashCode>
+      <FileName>Itens de Check List\csItemListaArquivos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Check_List.csItemListaOpcoes">
+    <Position X="9.5" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAYIAAAAAAAABAREIAAAQAAAAGEgAABQAAA=</HashCode>
+      <FileName>Itens de Check List\csItemListaOpcoes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Check_List.csItemTexto">
+    <Position X="3.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACIAAAAYAAAAAAAAAAABAAQAAAAACACAgAAAQAAA=</HashCode>
+      <FileName>Itens de Check List\csItemTexto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Check_List.csListaItens" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <NestedTypes>
+      <Enum Name="Check_List.csListaItens.enuTipoCheckList" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Lista de Check Itens\csListaItens.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Check_List.csListaItens.enuTipoCheckIten" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Lista de Check Itens\csListaItens.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAIAABAAAAEBkAgAAAACNQRkEEAABIKEAAaQAANAAAA=</HashCode>
+      <FileName>Lista de Check Itens\csListaItens.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Check_List.Program" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Check_List.Properties.Resources" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Check_List.Properties.Settings" Collapsed="true">
+    <Position X="7.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
