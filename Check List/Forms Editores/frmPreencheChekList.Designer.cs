@@ -123,8 +123,8 @@
             this.mnuFerramentasDesacoplarModelo,
             this.mnuFerramentasRelatorio,
             this.mnuFerramentasExtrairArquivos,
-            this.mnuFerramentasVerLog,
-            this.mnuFerramentasAdicionarComentario});
+            this.mnuFerramentasAdicionarComentario,
+            this.mnuFerramentasVerLog});
             this.ferramentasToolStripMenuItem.Name = "ferramentasToolStripMenuItem";
             this.ferramentasToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
             this.ferramentasToolStripMenuItem.Text = "Ferramentas";
@@ -214,8 +214,7 @@
             // 
             this.mnuFerramentasAdicionarComentario.Name = "mnuFerramentasAdicionarComentario";
             this.mnuFerramentasAdicionarComentario.Size = new System.Drawing.Size(303, 26);
-            this.mnuFerramentasAdicionarComentario.Text = "Adicionar Comentário";
-            this.mnuFerramentasAdicionarComentario.Visible = false;
+            this.mnuFerramentasAdicionarComentario.Text = "Comentários";
             this.mnuFerramentasAdicionarComentario.Click += new System.EventHandler(this.mnuFerramentasAdicionarComentario_Click);
             // 
             // lblCheckListReutilizado
