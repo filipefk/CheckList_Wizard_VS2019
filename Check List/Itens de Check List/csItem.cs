@@ -33,7 +33,31 @@ namespace Check_List
             }
         }
 
-        
+        /// <summary>
+        /// Monta o relatório que lista todas as opções do CheckList
+        /// </summary>
+        public virtual string TextoRelatorioTodasOpcoes
+        {
+            get
+            {
+                string _TextoRelatorio = "<font size=3><b>" + this.Nome + "</b> - <i>" + this.Descricao + "</i></font><br/>\n";
+                _TextoRelatorio += this.TextoTodasOpcoes;
+                return _TextoRelatorio;
+            }
+        }
+
+        /// <summary>
+        /// Retorna um texto com todas as opções do item
+        /// </summary>
+        public virtual string TextoTodasOpcoes
+        {
+            get
+            {
+                string _TextoRelatorio = "";
+                return _TextoRelatorio;
+            }
+        }
+
 
         /// <summary>
         /// Retorna um texto de relatório do item preenchido.

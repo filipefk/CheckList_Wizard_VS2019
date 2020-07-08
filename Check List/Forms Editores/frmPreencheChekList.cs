@@ -612,6 +612,14 @@ namespace Check_List
             }
         }
 
+        private void mnuFerramentasRelatorioLista_Click(object sender, EventArgs e)
+        {
+            if (_ListaCheckItens != null)
+            {
+                _ListaCheckItens.MostrarRelatorioTodasOpcoes();
+            }
+        }
+
         private void mnuFerramentasRelatorioModelo_Click(object sender, EventArgs e)
         {
             if (_ListaCheckItens != null)
@@ -711,6 +719,7 @@ namespace Check_List
             MessageBox.Show("Este CheckList parece estar sendo reutilizado\nUm CheckList não deve ser reutilizado, crie um novo CheckList a partir do modelo.","CheckList sendo reutilizado",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
         }
 
-    #endregion Eventos dos controle
+        #endregion Eventos dos controle
+
     }
 }

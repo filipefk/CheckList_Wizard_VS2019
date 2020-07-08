@@ -22,6 +22,7 @@
             this.mnuFerramentasDesacoplarModelo = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFerramentasRelatorio = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFerramentasRelatorioCompleto = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuFerramentasRelatorioLista = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFerramentasRelatorioModelo = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFerramentasRelatorioImportar = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuFerramentasRelatorioLimpar = new System.Windows.Forms.ToolStripMenuItem();
@@ -90,12 +91,13 @@
             // 
             // mnuMenu
             // 
+            this.mnuMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mnuMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuArquivo,
             this.ferramentasToolStripMenuItem});
             this.mnuMenu.Location = new System.Drawing.Point(0, 0);
             this.mnuMenu.Name = "mnuMenu";
-            this.mnuMenu.Size = new System.Drawing.Size(1370, 24);
+            this.mnuMenu.Size = new System.Drawing.Size(1370, 28);
             this.mnuMenu.TabIndex = 18;
             this.mnuMenu.Text = "menuStrip1";
             // 
@@ -104,13 +106,13 @@
             this.mnuArquivo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuArquivoSair});
             this.mnuArquivo.Name = "mnuArquivo";
-            this.mnuArquivo.Size = new System.Drawing.Size(61, 20);
+            this.mnuArquivo.Size = new System.Drawing.Size(75, 24);
             this.mnuArquivo.Text = "Arquivo";
             // 
             // mnuArquivoSair
             // 
             this.mnuArquivoSair.Name = "mnuArquivoSair";
-            this.mnuArquivoSair.Size = new System.Drawing.Size(93, 22);
+            this.mnuArquivoSair.Size = new System.Drawing.Size(117, 26);
             this.mnuArquivoSair.Text = "Sair";
             this.mnuArquivoSair.Click += new System.EventHandler(this.mnuArquivoSair_Click);
             // 
@@ -124,20 +126,20 @@
             this.mnuFerramentasVerLog,
             this.mnuFerramentasAdicionarComentario});
             this.ferramentasToolStripMenuItem.Name = "ferramentasToolStripMenuItem";
-            this.ferramentasToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.ferramentasToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
             this.ferramentasToolStripMenuItem.Text = "Ferramentas";
             // 
             // mnuFerramentasAcoplarModelo
             // 
             this.mnuFerramentasAcoplarModelo.Name = "mnuFerramentasAcoplarModelo";
-            this.mnuFerramentasAcoplarModelo.Size = new System.Drawing.Size(239, 22);
+            this.mnuFerramentasAcoplarModelo.Size = new System.Drawing.Size(303, 26);
             this.mnuFerramentasAcoplarModelo.Text = "Adicionar Modelo";
             this.mnuFerramentasAcoplarModelo.Click += new System.EventHandler(this.mnuFerramentasAcoplarModelo_Click);
             // 
             // mnuFerramentasDesacoplarModelo
             // 
             this.mnuFerramentasDesacoplarModelo.Name = "mnuFerramentasDesacoplarModelo";
-            this.mnuFerramentasDesacoplarModelo.Size = new System.Drawing.Size(239, 22);
+            this.mnuFerramentasDesacoplarModelo.Size = new System.Drawing.Size(303, 26);
             this.mnuFerramentasDesacoplarModelo.Text = "Remover Modelo";
             this.mnuFerramentasDesacoplarModelo.Click += new System.EventHandler(this.mnuFerramentasDesacoplarModelo_Click);
             // 
@@ -145,65 +147,73 @@
             // 
             this.mnuFerramentasRelatorio.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFerramentasRelatorioCompleto,
+            this.mnuFerramentasRelatorioLista,
             this.mnuFerramentasRelatorioModelo,
             this.mnuFerramentasRelatorioImportar,
             this.mnuFerramentasRelatorioLimpar,
             this.toolStripMenuItem2});
             this.mnuFerramentasRelatorio.Name = "mnuFerramentasRelatorio";
-            this.mnuFerramentasRelatorio.Size = new System.Drawing.Size(239, 22);
+            this.mnuFerramentasRelatorio.Size = new System.Drawing.Size(303, 26);
             this.mnuFerramentasRelatorio.Text = "Relatório";
             // 
             // mnuFerramentasRelatorioCompleto
             // 
             this.mnuFerramentasRelatorioCompleto.Name = "mnuFerramentasRelatorioCompleto";
-            this.mnuFerramentasRelatorioCompleto.Size = new System.Drawing.Size(209, 22);
-            this.mnuFerramentasRelatorioCompleto.Text = "Completo";
+            this.mnuFerramentasRelatorioCompleto.Size = new System.Drawing.Size(302, 26);
+            this.mnuFerramentasRelatorioCompleto.Text = "Completo com as respostas";
             this.mnuFerramentasRelatorioCompleto.Click += new System.EventHandler(this.mnuFerramentasRelatorioCompleto_Click);
+            // 
+            // mnuFerramentasRelatorioLista
+            // 
+            this.mnuFerramentasRelatorioLista.Name = "mnuFerramentasRelatorioLista";
+            this.mnuFerramentasRelatorioLista.Size = new System.Drawing.Size(302, 26);
+            this.mnuFerramentasRelatorioLista.Text = "Lista todas opções do CheckList";
+            this.mnuFerramentasRelatorioLista.Click += new System.EventHandler(this.mnuFerramentasRelatorioLista_Click);
             // 
             // mnuFerramentasRelatorioModelo
             // 
             this.mnuFerramentasRelatorioModelo.Name = "mnuFerramentasRelatorioModelo";
-            this.mnuFerramentasRelatorioModelo.Size = new System.Drawing.Size(209, 22);
+            this.mnuFerramentasRelatorioModelo.Size = new System.Drawing.Size(302, 26);
             this.mnuFerramentasRelatorioModelo.Text = "A partir do modelo...";
             this.mnuFerramentasRelatorioModelo.Click += new System.EventHandler(this.mnuFerramentasRelatorioModelo_Click);
             // 
             // mnuFerramentasRelatorioImportar
             // 
             this.mnuFerramentasRelatorioImportar.Name = "mnuFerramentasRelatorioImportar";
-            this.mnuFerramentasRelatorioImportar.Size = new System.Drawing.Size(209, 22);
+            this.mnuFerramentasRelatorioImportar.Size = new System.Drawing.Size(302, 26);
             this.mnuFerramentasRelatorioImportar.Text = "Importar Modelo";
             this.mnuFerramentasRelatorioImportar.Click += new System.EventHandler(this.mnuFerramentasRelatorioImportar_Click);
             // 
             // mnuFerramentasRelatorioLimpar
             // 
             this.mnuFerramentasRelatorioLimpar.Name = "mnuFerramentasRelatorioLimpar";
-            this.mnuFerramentasRelatorioLimpar.Size = new System.Drawing.Size(209, 22);
+            this.mnuFerramentasRelatorioLimpar.Size = new System.Drawing.Size(302, 26);
             this.mnuFerramentasRelatorioLimpar.Text = "Limpar Lista de Relatórios";
             this.mnuFerramentasRelatorioLimpar.Click += new System.EventHandler(this.mnuFerramentasRelatorioLimpar_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(206, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(299, 6);
             // 
             // mnuFerramentasExtrairArquivos
             // 
             this.mnuFerramentasExtrairArquivos.Name = "mnuFerramentasExtrairArquivos";
-            this.mnuFerramentasExtrairArquivos.Size = new System.Drawing.Size(239, 22);
+            this.mnuFerramentasExtrairArquivos.Size = new System.Drawing.Size(303, 26);
             this.mnuFerramentasExtrairArquivos.Text = "Extrair todos arquivos anexados";
             this.mnuFerramentasExtrairArquivos.Click += new System.EventHandler(this.mnuFerramentasExtrairArquivos_Click);
             // 
             // mnuFerramentasVerLog
             // 
             this.mnuFerramentasVerLog.Name = "mnuFerramentasVerLog";
-            this.mnuFerramentasVerLog.Size = new System.Drawing.Size(239, 22);
+            this.mnuFerramentasVerLog.Size = new System.Drawing.Size(303, 26);
             this.mnuFerramentasVerLog.Text = "Ver Log";
             this.mnuFerramentasVerLog.Click += new System.EventHandler(this.mnuFerramentasVerLog_Click);
             // 
             // mnuFerramentasAdicionarComentario
             // 
             this.mnuFerramentasAdicionarComentario.Name = "mnuFerramentasAdicionarComentario";
-            this.mnuFerramentasAdicionarComentario.Size = new System.Drawing.Size(239, 22);
+            this.mnuFerramentasAdicionarComentario.Size = new System.Drawing.Size(303, 26);
             this.mnuFerramentasAdicionarComentario.Text = "Adicionar Comentário";
             this.mnuFerramentasAdicionarComentario.Visible = false;
             this.mnuFerramentasAdicionarComentario.Click += new System.EventHandler(this.mnuFerramentasAdicionarComentario_Click);
@@ -217,10 +227,10 @@
             this.lblCheckListReutilizado.ForeColor = System.Drawing.Color.Red;
             this.lblCheckListReutilizado.Location = new System.Drawing.Point(188, 2);
             this.lblCheckListReutilizado.Name = "lblCheckListReutilizado";
-            this.lblCheckListReutilizado.Size = new System.Drawing.Size(606, 21);
+            this.lblCheckListReutilizado.Size = new System.Drawing.Size(830, 26);
             this.lblCheckListReutilizado.TabIndex = 20;
             this.lblCheckListReutilizado.Text = "                                      Este CheckList está sendo reutilizado      " +
-                "                                 ";
+    "                                 ";
             this.lblCheckListReutilizado.Visible = false;
             this.lblCheckListReutilizado.Click += new System.EventHandler(this.lblCheckListReutilizado_Click);
             // 
@@ -321,7 +331,7 @@
             // 
             // frmPreencheChekList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 592);
             this.Controls.Add(this.lblCheckListReutilizado);
@@ -388,5 +398,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnuFerramentasDesacoplarModelo;
         private System.Windows.Forms.Label lblCheckListReutilizado;
         private System.Windows.Forms.Timer tmrCheckListReutilizado;
+        private System.Windows.Forms.ToolStripMenuItem mnuFerramentasRelatorioLista;
     }
 }

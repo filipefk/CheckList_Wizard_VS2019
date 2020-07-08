@@ -492,6 +492,26 @@ namespace Check_List
         }
 
         /// <summary>
+        /// Monta o relatório que lista todas as opções do CheckList
+        /// </summary>
+        public string TextoRelatorioTodasOpcoes()
+        {
+            string NomeFonte = "Arial";
+            string _TextoRelatorio = "";
+            _TextoRelatorio = "<font face=\"" + NomeFonte + "\"><br/>\n" + "<font size = 5><b>" + this.Nome + "<br/>\n" +
+                            this.Descricao + "</b></font><br/>\n<br/>\n";
+            csItem item = null;
+            for (int i = 0; i < _Itens.Count; i++)
+            {
+                item = (csItem)_Itens[i];
+                _TextoRelatorio = _TextoRelatorio + item.TextoRelatorioTodasOpcoes + "<br/>\n<br/>\n";
+            }
+            _TextoRelatorio = _TextoRelatorio + "</font><br/>";
+
+            return _TextoRelatorio;
+        }
+
+        /// <summary>
         /// Retorna texto do relatório padrão
         /// </summary>
         public string TextoRelatorio()
@@ -635,6 +655,16 @@ namespace Check_List
             string _NomeArquivo = this.SalvaArquivoRelatorio(_TextoRelatorio);
             System.Diagnostics.Process.Start(_NomeArquivo);
 
+        }
+
+        /// <summary>
+        /// Monta o relatório que lista todas as opções do CheckList
+        /// </summary>
+        public void MostrarRelatorioTodasOpcoes()
+        {
+            string _TextoRelatorio = this.TextoRelatorioTodasOpcoes();
+            string _NomeArquivo = this.SalvaArquivoRelatorio(_TextoRelatorio);
+            System.Diagnostics.Process.Start(_NomeArquivo);
         }
 
         /// <summary>

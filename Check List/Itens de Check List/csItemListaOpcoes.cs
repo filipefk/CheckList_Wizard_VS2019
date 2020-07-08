@@ -31,6 +31,52 @@ namespace Check_List
         }
 
         /// <summary>
+        /// Retorna um texto de relatório com todas as opções do item
+        /// No caso do csItemListaOpcoes deve mostrar todas as opções disponíveis
+        /// </summary>
+        public override string TextoTodasOpcoes
+        {
+            get
+            {
+                string _TextoRelatorio = "";
+
+                foreach (csOpcao Opcao in _Opcoes)
+                {
+
+                    if (_TextoRelatorio.Trim().Length == 0)
+                    {
+                        _TextoRelatorio = _TextoRelatorio + "<font color=blue>";
+                    }
+                    else
+                    {
+                        _TextoRelatorio = _TextoRelatorio + "<br/>\n";
+                    }
+                    _TextoRelatorio = _TextoRelatorio + Opcao.Texto;
+
+                }
+                _TextoRelatorio = _TextoRelatorio + "</font>";
+
+                if (this.Observacao.Trim().Length > 0)
+                {
+                    _TextoRelatorio = _TextoRelatorio + "<font color=blue><b>Obs.:</b> " + this.Observacao.Replace("\n", "<br/>\n") + "</font>";
+                }
+
+                if (this.MultiplaEscolha)
+                {
+                    _TextoRelatorio = "<font color=red>Escolha quantas opções quiser</font><br>\n" + _TextoRelatorio;
+                }
+                else
+                {
+                    _TextoRelatorio = "<font color=red>Escolha só uma opção</font><br>\n" + _TextoRelatorio;
+                }
+
+                _TextoRelatorio = "<font color=gray>" + this.Ajuda + "</font><br>\n" + _TextoRelatorio;
+
+                return _TextoRelatorio;
+            }
+        }
+
+        /// <summary>
         /// Retorna um texto de relatório sem Nome e descrição do item preenchido.
         /// </summary>
         public override string TextoRelatorioCurto

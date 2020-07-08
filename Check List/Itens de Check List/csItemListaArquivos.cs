@@ -32,7 +32,21 @@ namespace Check_List
                 return "Lista de Arquivos";
             }
         }
-        
+
+        /// <summary>
+        /// Retorna um texto de relatório com todas as opções do item
+        /// No caso do csItemListaArquivos é o mesmo do TextoRelatorioCurto
+        /// </summary>
+        public override string TextoTodasOpcoes
+        {
+            get
+            {
+                string _TextoRelatorio = "";
+                _TextoRelatorio = "<font color=gray>" + this.Ajuda + "</font><br>\n" + this.TextoRelatorioCurto;
+                return _TextoRelatorio;
+            }
+        }
+
         /// <summary>
         /// Retorna um texto de relatório sem Nome e descrição do item preenchido.
         /// </summary>
