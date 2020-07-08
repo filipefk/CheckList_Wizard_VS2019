@@ -1,6 +1,6 @@
 # CheckList Wizard - Fontes gerados no Visual Studio 2019
 
-Aplicativo Windows Forms que pretende automatizar a troca de informações via Check List.
+Aplicativo Windows Forms .NET Framework 2.0 que pretende automatizar a troca de informações via Check List.
 
 Você cria um Check List (Modelo de Check List) conforme sua necessidade e solicita que seja preenchido este Check List antes da execução de determinada tarefa.
 

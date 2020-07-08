@@ -224,7 +224,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Check List, Version=2.0.0.1, Culture=neutral, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:Check List, Version=3.0.0.2, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_A34F703AB83E4DD5BF2FEC3964EEC530"
@@ -393,13 +393,13 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Check List Wizard"
-        "ProductCode" = "8:{245B4F1B-71A5-4D40-ABCD-2456A80D4280}"
-        "PackageCode" = "8:{BDA27DA3-DA84-44A1-B123-F032AC33C9C8}"
+        "ProductCode" = "8:{9CFB4FAF-4886-4101-B9ED-BAE723276AED}"
+        "PackageCode" = "8:{11EA7296-A969-4E97-895F-C80A0C795520}"
         "UpgradeCode" = "8:{0E6F2744-F2BF-4CB0-AF25-6856D388EFC8}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
-        "DetectNewerInstalledVersion" = "11:TRUE"
+        "RemovePreviousVersions" = "11:TRUE"
+        "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:2.0.1"
         "Manufacturer" = "8:Filipe Kanitz"
