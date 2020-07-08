@@ -224,7 +224,7 @@
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Check List, Version=3.0.0.2, Culture=neutral, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:Check List, Version=3.0.0.3, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
                     "_A34F703AB83E4DD5BF2FEC3964EEC530"
@@ -393,15 +393,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Check List Wizard"
-        "ProductCode" = "8:{E168BF27-AFB7-4133-90AB-790E13B83F18}"
-        "PackageCode" = "8:{079DE450-597A-4666-8346-49E1FB6E690C}"
+        "ProductCode" = "8:{CBFEFD54-0CED-424D-AA6A-C4C41BD5A0FE}"
+        "PackageCode" = "8:{25F6C228-E711-4498-965B-7EDE6DE05B66}"
         "UpgradeCode" = "8:{0E6F2744-F2BF-4CB0-AF25-6856D388EFC8}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:3.0.2"
+        "ProductVersion" = "8:3.0.3"
         "Manufacturer" = "8:Filipe Kanitz"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
